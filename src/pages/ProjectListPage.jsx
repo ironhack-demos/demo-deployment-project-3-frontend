@@ -32,7 +32,7 @@ function ProjectListPage() {
       <AddProject refreshProjects={getAllProjects} />
 
       {projects.map((project) => (
-        <ProjectCard key={project._id} {...project} />
+        <ProjectCard {...project} />
       ))}
     </div>
   );
